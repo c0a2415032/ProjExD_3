@@ -177,13 +177,13 @@ def main():
             if beam is not None:
                 if beam.rct.colliderect(bomb.rct): # ビームと爆弾の衝突判定
                     beam = None # ビームを消す
-                    bomb = None # 爆弾を消す
+                    bombs[j] = None # 爆弾を消す
                     bird.change_img(6, screen)        
             bombs = [bomb for bomb in bombs if bomb is not None]  # 撃ち落とされてない爆弾だけのリストにする
         
         key_lst = pg.key.get_pressed()
         bird.update(key_lst, screen)
-        if beam is not None:
+        if beam is not None: 
             beam.update(screen)
         for bomb in bombs:   
             bomb.update(screen)
