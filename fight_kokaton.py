@@ -144,7 +144,7 @@ class score:
     """
     スコアに関するクラス
     """
-    def __init__(self,):
+    def __init__(self):
         """
         文字の設定
         スコア変数の設定
