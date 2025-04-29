@@ -158,7 +158,6 @@ class score:
         self.txt = self.fonto.render(f"スコア：{self.suko}",True, (0, 0, 255))
         screen.blit(self.txt,self.xy)
 
-
 def main():
     pg.display.set_caption("たたかえ！こうかとん")
     screen = pg.display.set_mode((WIDTH, HEIGHT))    
